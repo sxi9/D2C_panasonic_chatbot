@@ -47,8 +47,8 @@ The chatbot uses a finetuned **Gemma2 2B model** for the local language model:
    Create and activate a virtual environment to isolate your project dependencies:
 
    ```bash
-   venv\Scripts\activate
-   source venv/bin/activate
+   python -m venv RAG
+   source RAG/bin/activate
    ```
 
 3. **Install Dependencies**:
