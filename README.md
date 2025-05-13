@@ -73,26 +73,3 @@ The chatbot uses a finetuned **Gemma2 2B model** for the local language model:
    chainlit run app.py
    ```
 
-## Dependencies
-
-The following packages are required to run the chatbot:
-
-* **`chainlit==0.7.1`**: For the chatbot interface.
-* **`langchain==0.0.352`**: For the RAG pipeline.
-* **`langchain-ollama==0.3.2`**: For integrating Ollama LLM.
-* **`langchain-community==0.0.38`**: For community tools like Chroma and PyPDFLoader.
-* **`pandas==1.5.3`**: For handling datasets.
-* **`ollama==0.1.9`**: For local LLM inference with Gemma2.
-* **`fuzzywuzzy==0.18.0`**: For fuzzy string matching in query processing.
-
-The complete list is available in the `requirements.txt` file.
-
-## Key Files
-
-* **`app.py`**: The main Chainlit application for the RAG chatbot.
-* **`scrap.py`**: A script for scraping Panasonic product data.
-* **`data/FullyFinalPanasonicProducts_WithHotKeywords.csv`**: The primary dataset containing product information and hot search keywords.
-* **`docs/Panasonic Products_Complete Guide and Search Reference.pdf`**: A detailed guide for the dataset.
-* **`requirements.txt`**: A list of required Python packages.
-* **`logs/`**: Contains logs generated during the chatbot's operation.
-
