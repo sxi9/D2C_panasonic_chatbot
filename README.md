@@ -32,7 +32,7 @@ The chatbot uses a finetuned **Gemma2 2B model** for the local language model:
 ### Prerequisites
 
 - **Python 3.10.12** or later
-- **Ollama** installed from [ollama.ai](https://ollama.ai)
+
 
 ### Installation
 
