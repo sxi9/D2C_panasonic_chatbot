@@ -20,7 +20,7 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('/home/interns/rag/localRAG/appp.log'),
+        logging.FileHandler('./appp.log'),
         logging.StreamHandler()
     ]
 )
@@ -32,7 +32,7 @@ CHUNK_SIZE = 500
 CHUNK_OVERLAP = 100
 K_RETRIEVAL = 100
 MAX_PRODUCTS_TO_SHOW = 10
-PERSIST_DIRECTORY = "/home/interns/rag/localRAG/chroma_db"
+PERSIST_DIRECTORY = "./chroma_db"
 
 logger.info("Initializing Ollama embeddings and LLM")
 embeddings = OllamaEmbeddings(model="nomic-embed-text")
