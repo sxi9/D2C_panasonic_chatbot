@@ -1,4 +1,3 @@
-
 # D2C Panasonic Chatbot
 
 ## Overview
@@ -18,8 +17,8 @@ The dataset is detailed in the `Panasonic Products: Complete Guide and Search Re
 
 The dataset includes **168 Panasonic products** with attributes such as **Product ID**, **Category**, **Title**, **Price (INR)**, **Image URL**, **Key Features**, **Specifications (JSON)**, **Product URL**, and more. Below are the key dataset files:
 
-- **`data/FullyFinalPanasonicProducts_WithHotKeywords.csv`**: The primary dataset containing product information and search keywords.
-- **`docs/Panasonic Products_Complete Guide and Search Reference.pdf`**: A comprehensive guide with detailed information about the products.
+- **`FullyFinalPanasonicProducts_WithHotKeywords.csv`**: The primary dataset containing product information and search keywords.
+- **`Panasonic Products_Complete Guide and Search Reference.pdf`**: A comprehensive guide with detailed information about the products.
 
 ## Language Model (LLM) Details
 
@@ -58,9 +57,11 @@ The chatbot uses a finetuned **Gemma2 2B model** for the local language model:
    pip install -r requirements.txt
    ```
 
+4. **Install Ollama**: 
+   Ensure you have Ollama installed. You can find installation instructions at [https://ollama.com](https://ollama.com).
 
-5. **Pull the Gemma2 2B Model**:
-   Pull the Gemma2 2B model using the following command:
+5. **Pull the Gemma2 2B Ollama Model**:
+   Pull the Gemma2 2B model using the following Ollama command:
 
    ```bash
    ollama pull gemma2:2b
@@ -73,3 +74,6 @@ The chatbot uses a finetuned **Gemma2 2B model** for the local language model:
    chainlit run app.py
    ```
 
+## Logging
+
+The application logs its activity to `appp.log`. This file can be helpful for debugging purposes or monitoring the chatbot's operations.
